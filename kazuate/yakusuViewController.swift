@@ -2,11 +2,10 @@
 //  kazuate
 
 import UIKit
-
 class yakusuViewController: UIViewController {
 
-    @IBOutlet weak var textview: UITextView!
     @IBOutlet weak var textfield: UITextField!
+    @IBOutlet weak var textview: UITextView!
     var ans:Int=0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,41 +23,40 @@ class yakusuViewController: UIViewController {
     private var kaisu:Int=0
     
     @IBAction func tapbutton(_ sender: Any) {
+        
         guard let yosou = Int(textfield.text!) else {
             return
         }
+        self.kaisu+=1   //答えた回数をカウント
         //判定して返事を書く
         if self.ans==yosou {
             henji="\nあたり!正解は\(ans)でした。\n  次の問題"
             self.ans=Int(arc4random_uniform(100))
         }else if self.ans>yosou{
             henji="\n\(yosou)よりも大きいよ"
-            yakusu()
+          
         }else {
-            
             henji="\n\(yosou)よりも小さいよ"
-            yakusu()
         }
-        self.textview.text=self.textview.text + henji
-        textview.scrollRangeToVisible(textview.selectedRange)  //下まで自動スクロール
-    }
-    
-    func yakusu(){
-        self.kaisu+=1
         
+    //約数ヒント
         if self.kaisu == 3{  //三回目でヒント
-            henji+="約数は"
-            for k in 2..<self.ans/2{
+            henji+="､約数は"
+            for k in 2 ..< self.ans/2{
                 if(self.ans%k==0){
                     henji+=",\(k)"
                 }
             }
-            if henji.count == 3{
-                henji += "表示きるものがありません"
-            }
-            print( henji.count )
         }
-        textfield.text=""
+        
+       self.textview.text=self.textview.text + henji
+       textview.scrollRangeToVisible(textview.selectedRange)  //下まで自動スクロール
+        textfield.text=""  //回答フィールドを空にする
+    }
+    
+    @IBAction func tapimage(_ sender: Any) {
+        // キーボードを閉じる
+        textfield.endEditing(true);
     }
 
 
