@@ -12,6 +12,9 @@
 		5F0535272116753D00C97BB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0535252116753D00C97BB5 /* Main.storyboard */; };
 		5F0535292116753F00C97BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0535282116753F00C97BB5 /* Assets.xcassets */; };
 		5F05352C2116753F00C97BB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F05352A2116753F00C97BB5 /* LaunchScreen.storyboard */; };
+		5F053534211676FB00C97BB5 /* kazuate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F053533211676FB00C97BB5 /* kazuate.jpg */; };
+		5F053536211680D500C97BB5 /* yakusuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F053535211680D500C97BB5 /* yakusuViewController.swift */; };
+		5F0535382116815500C97BB5 /* numbers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F0535372116815500C97BB5 /* numbers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		5F0535282116753F00C97BB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F05352B2116753F00C97BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F05352D2116753F00C97BB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F053533211676FB00C97BB5 /* kazuate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kazuate.jpg; sourceTree = "<group>"; };
+		5F053535211680D500C97BB5 /* yakusuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yakusuViewController.swift; sourceTree = "<group>"; };
+		5F0535372116815500C97BB5 /* numbers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = numbers.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 		5F0535202116753D00C97BB5 /* kazuate */ = {
 			isa = PBXGroup;
 			children = (
+				5F0535372116815500C97BB5 /* numbers.jpg */,
 				5F0535212116753D00C97BB5 /* AppDelegate.swift */,
+				5F053533211676FB00C97BB5 /* kazuate.jpg */,
 				5F0535232116753D00C97BB5 /* ViewController.swift */,
 				5F0535252116753D00C97BB5 /* Main.storyboard */,
+				5F053535211680D500C97BB5 /* yakusuViewController.swift */,
 				5F0535282116753F00C97BB5 /* Assets.xcassets */,
 				5F05352A2116753F00C97BB5 /* LaunchScreen.storyboard */,
 				5F05352D2116753F00C97BB5 /* Info.plist */,
@@ -122,9 +131,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0535382116815500C97BB5 /* numbers.jpg in Resources */,
 				5F05352C2116753F00C97BB5 /* LaunchScreen.storyboard in Resources */,
 				5F0535292116753F00C97BB5 /* Assets.xcassets in Resources */,
 				5F0535272116753D00C97BB5 /* Main.storyboard in Resources */,
+				5F053534211676FB00C97BB5 /* kazuate.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0535242116753D00C97BB5 /* ViewController.swift in Sources */,
+				5F053536211680D500C97BB5 /* yakusuViewController.swift in Sources */,
 				5F0535222116753D00C97BB5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kazuate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kazuate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
