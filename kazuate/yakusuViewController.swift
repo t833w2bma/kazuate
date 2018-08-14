@@ -32,6 +32,7 @@ class yakusuViewController: UIViewController {
         if ans==yosou {
             henji="\nあたり!正解は\(ans)でした。\n  次の問題"
             ans=Int(arc4random_uniform(100))
+             kaisu = 0 //回数を初期化する
         }else if ans>yosou{
             henji="\n\(yosou)よりも大きいよ"
           
